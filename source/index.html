@@ -2,14 +2,59 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Интернет-магазин кофейных напитков - Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="adres" width="170" height="36" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="adres" width="82" height="36" type="image/svg+xml">
+              <img class="header__logo-image" src="adres" width="32" height="36" alt="Drink2Go">
+            </picture>
+          </a>
+          <span class="header__logo-text">Интернет-магазин кофейных напитков</span>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Каталог</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Доставка</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">О нас</a>
+            </li>
+          </ul>
+          <ul class="header__nav-list header__nav-list--ui">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Корзина</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__nav-burger" type="button">
+                <span class="header__nav-burger-text visually-hidden">Открыть меню</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <h1>Страница для старта</h1>
     </main>
