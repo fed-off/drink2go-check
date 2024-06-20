@@ -252,7 +252,7 @@
             <button class="catalog__pagination-button catalog__pagination-button--pre" type="button">
               <span class="visually-hidden">Предыдущая страница</span>
             </button>
-            <ul class="catalog__pagination-list">
+            <ol class="catalog__pagination-list">
               <li class="catalog__pagination-item">
                 <button class="catalog__pagination-button button" type="button">
                   <span class="catalog__pagination-button-text">1</span>
@@ -268,7 +268,7 @@
                   <span class="catalog__pagination-button-text">3</span>
                 </button>
               </li>
-            </ul>
+            </ol>
             <button class="catalog__pagination-button catalog__pagination-button--next" type="button">
               <span class="visually-hidden">Следующая страница</span>
             </button>
@@ -285,12 +285,97 @@
             <source type="image/webp" srcset="./images/map-mobile@1x.webp, ./images/map-mobile@2x.webp 2x" width="320" height="362">
             <source type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png, ./images/map-desktop@2x.png 2x" width="1440" height="400">
             <source type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png, ./images/map-tablet@2x.png 2x" width="768" height="400">
-            <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Расположение нашего офиса на карте" loading="lazy"> -->
+            <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Санкт-Петербург, набережная реки Карповки, дом 5" loading="lazy"> -->
           </picture>
         </div>
       </section>
     </main>
 
-    <footer class="page__footer" data-test="footer"></footer>
+    <footer class="footer" data-test="footer">
+      <div class="footer__container container">
+        <div class="footer__socials socials">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#">
+              <picture>
+                <!-- <source media="(min-width: 1440px)" srcset="adres" width="170" height="36" type="image/svg+xml">
+                <source media="(min-width: 768px)" srcset="adres" width="82" height="36" type="image/svg+xml">
+                <img class="footer__logo-image" src="adres" width="32" height="36" alt="Drink2Go"> -->
+              </picture>
+            </a>
+            <span class="footer__logo-text">Интернет-магазин кофейных напитков</span>
+          </div>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--vkontakte" href="#">
+                <span class="visually-hidden">Мы во Vkontakte</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--pinterest" href="#">
+                <span class="visually-hidden">Мы в Pinterest</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--ok" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footer__info-list">
+          <li class="footer__info-section info-section">
+            <h2 class="info-section__title">Интернет-магазин</h2>
+            <ul class="info-section__list">
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">Каталог</a>
+              </li>
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">Доставка</a>
+              </li>
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">Способы оплаты</a>
+              </li>
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__info-section info-section">
+            <h2 class="info-section__title">Медиа</h2>
+            <ul class="info-section__list">
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">Блог</a>
+              </li>
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">Информация для СМИ</a>
+              </li>
+              <li class="info-section__item">
+                <a class="info-section__link" href="#">Правовая информация</a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__info-section info-section">
+            <h2 class="info-section__title">Контакты</h2>
+            <div class="info-section__list">
+              <address class="info-section__item">
+                <span class="info-section__link">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+              </address>
+              <span class="info-section__item">
+                <a class="info-section__link" href="tel:+79999999999">+7 (999) 999-99-99</a>
+              </span>
+            </div>
+          </li>
+        </ul>
+        <p class="footer__copyright">
+          <span class="footer__copyright-text">Разработано в</span>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <picture>
+              <!-- <source media="(min-width: 1440px)" srcset="adres" width="55" height="54" type="image/svg+xml">
+              <img class="footer__copyright-logo" src="adres" width="55" height="54" alt="HTML Academy"> -->
+            </picture>
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
