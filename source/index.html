@@ -9,7 +9,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header" data-test="header">
       <div class="header__container container">
         <div class="header__logo">
           <a class="header__logo-link" href="#">
@@ -47,7 +47,7 @@
               <a class="header__nav-link" href="#">Корзина</a>
             </li>
             <li class="header__nav-item">
-              <button class="header__nav-burger" type="button">
+              <button class="header__nav-burger js-toggle-button" type="button">
                 <span class="header__nav-burger-text visually-hidden">Открыть меню</span>
               </button>
             </li>
@@ -55,9 +55,10 @@
         </nav>
       </div>
     </header>
+
     <main>
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков - Drink2Go</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <div class="hero__container container">
           <h2 class="visually-hidden">Наши лучшие новики</h2>
           <div class="hero__slider slider">
@@ -136,13 +137,13 @@
               </li>
             </ul>
 
-            <button class="slider__button slider__button--prev" type="button">
+            <button class="slider__button slider__button--prev slider-button-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="slider__button slider__button--next" type="button">
+            <button class="slider__button slider__button--next slider-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
-            <ul class="slider__pagination">
+            <ul class="slider__pagination slider-pagination">
               <li class="slider__pagination-item">
                 <button class="slider__pagination-button" type="button">
                   <span class="visually-hidden">Слайд 1</span>
@@ -162,6 +163,14 @@
           </div>
         </div>
       </section>
+
+      <section class="features" data-test="features"></section>
+
+      <section class="catalog" data-test="catalog"></section>
+
+      <section class="map" data-test="map"></section>
     </main>
+
+    <footer class="page__footer" data-test="footer"></footer>
   </body>
 </html>
