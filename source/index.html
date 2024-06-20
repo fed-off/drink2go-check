@@ -14,8 +14,8 @@
         <div class="header__logo">
           <a class="header__logo-link" href="#">
             <picture>
-              <source media="(min-width: 1440px)" srcset="adres" width="170" height="36" type="image/svg+xml">
-              <source media="(min-width: 768px)" srcset="adres" width="82" height="36" type="image/svg+xml">
+              <!-- <source media="(min-width: 1440px)" srcset="adres" width="170" height="36" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="adres" width="82" height="36" type="image/svg+xml"> -->
               <img class="header__logo-image" src="adres" width="32" height="36" alt="Drink2Go">
             </picture>
           </a>
@@ -56,7 +56,112 @@
       </div>
     </header>
     <main>
-      <h1>Страница для старта</h1>
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков - Drink2Go</h1>
+      <section class="hero">
+        <div class="hero__container container">
+          <h2 class="visually-hidden">Наши лучшие новики</h2>
+          <div class="hero__slider slider">
+            <ul class="slider__cards">
+              <li class="slider__card card">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.webp, ./images/index-preview-desktop@2x.webp 2x" width="552" height="499">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.webp, ./images/index-preview-tablet@2x.webp 2x" width="709" height="609">
+                  <source type="image/webp" srcset="./images/index-preview-mobile@1x.webp, ./images/index-preview-mobile@2x.webp 2x" width="280" height="270">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.png, ./images/index-preview-desktop@2x.png 2x" width="552" height="499">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.png, ./images/index-preview-tablet@2x.png 2x" width="709" height="609"> -->
+                  <img class="card__image" src="adres" srcset="adres 2x" width="280" height="280" alt="Банка кофе Drink2Go на фоне молочных брызгов">
+                </picture>
+                <p class="card__badge badge">Новинка!</p>
+                <h3 class="card__title">Декаф Флэт Уайт</h3>
+                <p class="card__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <p class="card__purchase">
+                  <del class="card__price card__price--old">
+                    <span class="visually-hidden">Старая цена:</span>
+                    <span>295₽</span>
+                  </del>
+                  <b class="card__price card__price--new">
+                    <span class="visually-hidden">Новая цена:</span>
+                    <span>250₽</span>
+                  </b>
+                  <button class="card__button-buy button" type="button">Заказать</button>
+                </p>
+              </li>
+              <li class="slider__card card">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.webp, ./images/index-preview-desktop@2x.webp 2x" width="552" height="499">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.webp, ./images/index-preview-tablet@2x.webp 2x" width="709" height="609">
+                  <source type="image/webp" srcset="./images/index-preview-mobile@1x.webp, ./images/index-preview-mobile@2x.webp 2x" width="280" height="270">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.png, ./images/index-preview-desktop@2x.png 2x" width="552" height="499">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.png, ./images/index-preview-tablet@2x.png 2x" width="709" height="609"> -->
+                  <img class="card__image" src="adres" srcset="adres 2x" width="280" height="280" alt="Банка кофе латте Drink2Go на фоне цветов лаванды">
+                </picture>
+                <p class="card__badge badge">Новинка!</p>
+                <h3 class="card__title">Лавандовый Латте</h3>
+                <p class="card__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <p class="card__purchase">
+                  <del class="card__price card__price--old">
+                    <span class="visually-hidden">Старая цена:</span>
+                    <span>285₽</span>
+                  </del>
+                  <b class="card__price card__price--new">
+                    <span class="visually-hidden">Новая цена:</span>
+                    <span>265₽</span>
+                  </b>
+                  <button class="card__button-buy button" type="button">Заказать</button>
+                </p>
+              </li>
+              <li class="slider__card card">
+                <picture>
+                  <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.webp, ./images/index-preview-desktop@2x.webp 2x" width="552" height="499">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.webp, ./images/index-preview-tablet@2x.webp 2x" width="709" height="609">
+                  <source type="image/webp" srcset="./images/index-preview-mobile@1x.webp, ./images/index-preview-mobile@2x.webp 2x" width="280" height="270">
+                  <source type="image/png" media="(min-width: 1440px)" srcset="./images/index-preview-desktop@1x.png, ./images/index-preview-desktop@2x.png 2x" width="552" height="499">
+                  <source type="image/png" media="(min-width: 768px)" srcset="./images/index-preview-tablet@1x.png, ./images/index-preview-tablet@2x.png 2x" width="709" height="609"> -->
+                  <img class="card__image" src="adres" srcset="adres 2x" width="280" height="280" alt="Банка кофе эспрессо Drink2Go на фоне падающих кофейных зёрен">
+                </picture>
+                <p class="card__badge badge">Новинка!</p>
+                <h3 class="card__title">Тройной Эспрессо</h3>
+                <p class="card__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <p class="card__purchase">
+                  <del class="card__price card__price--old">
+                    <span class="visually-hidden">Старая цена:</span>
+                    <span>395₽</span>
+                  </del>
+                  <b class="card__price card__price--new">
+                    <span class="visually-hidden">Новая цена:</span>
+                    <span>275₽</span>
+                  </b>
+                  <button class="card__button-buy button" type="button">Заказать</button>
+                </p>
+              </li>
+            </ul>
+
+            <button class="slider__button slider__button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider__button slider__button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+            <ul class="slider__pagination">
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 1</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 2</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">Слайд 3</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
