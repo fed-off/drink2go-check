@@ -208,7 +208,29 @@
           <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__fieldset">
               <legend class="filter__title">Цена</legend>
-              <input class="filter__input" type="range" min="0" max="1000" step="50" value="500">
+              <div class="filter__price-filter price-filter">
+                <div class="price-filter__range">
+                  <div class="price-filter__range-bar">
+                    <button class="price-filter__range-toggle price-filter__range-toggle--min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="price-filter__range-toggle price-filter__range-toggle--max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="price-filter__price-inputs">
+                  <label class="price-filter__price-label">
+                    <span class="visually-hidden">Минимальная цена</span>
+                    <input class="price-filter__price-input" type="number" name="min-price" placeholder="0" min="0">
+                  </label>
+                  <span class="price-filter__price-delimiter"></span>
+                  <label class="price-filter__price-label">
+                    <span class="visually-hidden">Маскимальная цена</span>
+                    <input class="price-filter__price-input" type="number" name="max-price" placeholder="1500" min="0" value="900">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter__fieldset">
               <legend class="filter__title">Наличие молока</legend>
