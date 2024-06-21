@@ -222,12 +222,12 @@
                 <div class="price-filter__price-inputs">
                   <label class="price-filter__price-label">
                     <span class="visually-hidden">Минимальная цена</span>
-                    <input class="price-filter__price-input" type="number" name="min-price" placeholder="0" min="0">
+                    <input class="price-filter__price-input" type="number" name="min-price" placeholder="0" min="0" required>
                   </label>
                   <span class="price-filter__price-delimiter"></span>
                   <label class="price-filter__price-label">
                     <span class="visually-hidden">Маскимальная цена</span>
-                    <input class="price-filter__price-input" type="number" name="max-price" placeholder="1500" min="0" value="900">
+                    <input class="price-filter__price-input" type="number" name="max-price" placeholder="1500" min="0" value="900" required>
                   </label>
                 </div>
               </div>
@@ -263,6 +263,38 @@
             </fieldset>
             <fieldset class="filter__fieldset">
               <legend class="filter__title">Страна произрастания</legend>
+              <ul class="filter__option-list">
+                <li class="filter__option-item">
+                  <label class="filter__option-label">
+                    <input class="filter__checkbox" type="checkbox" name="Brazil">
+                    <span class="filter__option-label-text">Бразилия</span>
+                  </label>
+                </li>
+                <li class="filter__option-item">
+                  <label class="filter__option-label">
+                    <input class="filter__checkbox" type="checkbox" name="Ethiopia">
+                    <span class="filter__option-label-text">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="filter__option-item">
+                  <label class="filter__option-label">
+                    <input class="filter__checkbox" type="checkbox" name="Colombia">
+                    <span class="filter__option-label-text">Колумбия</span>
+                  </label>
+                </li>
+                <li class="filter__option-item">
+                  <label class="filter__option-label">
+                    <input class="filter__checkbox" type="checkbox" name="Costa-Rica">
+                    <span class="filter__option-label-text">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="filter__option-item">
+                  <label class="filter__option-label">
+                    <input class="filter__checkbox" type="checkbox" name="Peru">
+                    <span class="filter__option-label-text">Перу</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <button class="filter__button button button--brand" type="submit">Применить</button>
             <button class="filter__button button" type="reset">Сбросить</button>
