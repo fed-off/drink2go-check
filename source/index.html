@@ -183,19 +183,19 @@
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__item-title">Скорость</h3>
-              <p class="features__decription">Готовый напиток всегда под рукой — просто открой банку</p>
+              <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Удобство</h3>
-              <p class="features__decription">Легко помещается и в карман, и в маленькую сумочку</p>
+              <p class="features__description">Легко помещается и в карман, и в маленькую сумочку</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Бодрость</h3>
-              <p class="features__decription">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+              <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Экологичность</h3>
-              <p class="features__decription">Вся упаковка сделана из перерабатываемых материалов</p>
+              <p class="features__description">Вся упаковка сделана из перерабатываемых материалов</p>
             </li>
           </ul>
         </div>
@@ -301,10 +301,11 @@
           </form>
           <p class="catalog__sorting">
             <span class="catalog__sorting-text">Сортировка:</span>
-            <select class="catalog__sorting-select">
+            <select class="catalog__sorting-select" name="sort-by-price">
               <option value="default" selected>По умолчанию</option>
               <option value="low-price">По возрастанию цены</option>
               <option value="hight-price">По убыванию цены</option>
+            </select>
           </p>
           <ul class="catalog__list">
             <li class="catalog__product-card product-card">
@@ -364,8 +365,8 @@
             <source type="image/webp" media="(min-width: 768px)" srcset="./images/map-tablet@1x.webp, ./images/map-tablet@2x.webp 2x" width="768" height="400">
             <source type="image/webp" srcset="./images/map-mobile@1x.webp, ./images/map-mobile@2x.webp 2x" width="320" height="362">
             <source type="image/png" media="(min-width: 1440px)" srcset="./images/map-desktop@1x.png, ./images/map-desktop@2x.png 2x" width="1440" height="400">
-            <source type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png, ./images/map-tablet@2x.png 2x" width="768" height="400">
-            <img class="partnership__map" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Санкт-Петербург, набережная реки Карповки, дом 5" loading="lazy"> -->
+            <source type="image/png" media="(min-width: 768px)" srcset="./images/map-tablet@1x.png, ./images/map-tablet@2x.png 2x" width="768" height="400"> -->
+            <img class="map__image" src="./images/map-mobile@1x.png" srcset="./images/map-mobile@2x.png 2x" width="320" height="362" alt="Санкт-Петербург, набережная реки Карповки, дом 5" loading="lazy">
           </picture>
         </div>
       </section>
@@ -378,8 +379,8 @@
             <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
               <picture>
                 <!-- <source media="(min-width: 1440px)" srcset="adres" width="170" height="36" type="image/svg+xml">
-                <source media="(min-width: 768px)" srcset="adres" width="82" height="36" type="image/svg+xml">
-                <img class="footer__logo-image" src="adres" width="32" height="36" alt="Drink2Go"> -->
+                <source media="(min-width: 768px)" srcset="adres" width="82" height="36" type="image/svg+xml"> -->
+                <img class="footer__logo-image" src="adres" width="32" height="36" alt="Drink2Go">
               </picture>
             </a>
             <span class="footer__logo-text">Интернет-магазин кофейных напитков</span>
@@ -387,12 +388,12 @@
           <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link socials__link--vkontakte" href="#">
-                <span class="visually-hidden">Мы во Vkontakte</span>
+                <span class="visually-hidden">Мы во Вконтакте</span>
               </a>
             </li>
             <li class="socials__item">
               <a class="socials__link socials__link--pinterest" href="#">
-                <span class="visually-hidden">Мы в Pinterest</span>
+                <span class="visually-hidden">Мы в Пинтересте</span>
               </a>
             </li>
             <li class="socials__item">
@@ -450,8 +451,8 @@
           <span class="footer__copyright-text">Разработано в</span>
           <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <picture>
-              <!-- <source media="(min-width: 1440px)" srcset="adres" width="55" height="54" type="image/svg+xml">
-              <img class="footer__copyright-logo" src="adres" width="55" height="54" alt="HTML Academy"> -->
+              <!-- <source media="(min-width: 1440px)" srcset="adres" width="55" height="54" type="image/svg+xml"> -->
+              <img class="footer__copyright-logo" src="adres" width="55" height="54" alt="HTML Academy">
             </picture>
           </a>
         </p>
