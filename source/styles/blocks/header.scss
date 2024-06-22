@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     justify-content: stretch;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .header__logo {
@@ -16,6 +21,23 @@
   @media (min-width: $tablet-width) {
     padding: 22px 0;
     margin-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.header__logo-link {
+  &:focus-visible,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -60,6 +82,17 @@
       background-color: $base-primory;
     }
   }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:focus-visible,
+    &:hover {
+      color: $base-primory;
+    }
+  }
 }
 
 .header__nav-list {
@@ -95,6 +128,11 @@
 
       .header__nav-link {
         padding: 20px;
+
+        &:active {
+          color: $base-black;
+          background-color: $base-secondary;
+        }
       }
     }
   }
@@ -107,6 +145,12 @@
     justify-content: space-between;
     width: 580px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    min-width: 882px;
+    width: auto;
+  }
 }
 
 .header__nav-list--menu {
@@ -118,6 +162,11 @@
     .header__nav-link {
       padding: 32px 21px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    width: auto;
   }
 }
 
@@ -152,6 +201,10 @@
       background-color: transparent;
       border: 0;
       cursor: pointer;
+
+      &:active {
+        background-color: $base-secondary;
+      }
     }
 
     &--burger::before {
@@ -167,11 +220,28 @@
     @media (min-width: $tablet-width) {
       padding: 32px 22px;
     }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      gap: 8px;
+
+      &:focus-visible::before,
+      &:hover::before {
+        background-color: $base-primory;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
     max-width: 125px;
     margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    gap: 18px;
+    max-width: 300px;
+    flex-shrink: 0;
   }
 }
 
