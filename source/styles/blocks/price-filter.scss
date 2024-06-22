@@ -1,0 +1,11 @@
+.price-filter__input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: $medium;
+  line-height: inherit;
+  color: inherit;
+
+  &::placeholder {
+    color: $base-grey;
+  }
+}

@@ -27,28 +27,35 @@
               <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Каталог</a>
+              <a class="header__nav-link" href="#">
+                <span class="header__nav-link-text">Каталог</span>
+              </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Доставка</a>
+              <a class="header__nav-link" href="#">
+                <span class="header__nav-link-text">Доставка</span>
+              </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Доставка</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#">О нас</a>
+              <a class="header__nav-link" href="#">
+                <span class="header__nav-link-text">О нас</span>
+              </a>
             </li>
           </ul>
           <ul class="header__nav-list header__nav-list--ui">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Войти</a>
+              <a class="header__nav-link" href="#">
+                <span class="header__nav-link-text header__nav-link-text--desktop">Войти</span>
+              </a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Корзина</a>
+              <a class="header__nav-link" href="#">
+                <span class="header__nav-link-text header__nav-link-text--desktop">Корзина</span>
+              </a>
             </li>
             <li class="header__nav-item">
-              <button class="header__nav-burger js-toggle-button" type="button">
-                <span class="header__nav-burger-text visually-hidden">Открыть меню</span>
+              <button class="header__nav-link js-toggle-button" type="button">
+                <span class="header__nav-link-text visually-hidden">Открыть меню</span>
               </button>
             </li>
           </ul>
@@ -86,7 +93,7 @@
                   </del>
                   <b class="slide-card__price slide-card__price--new">
                     <span class="visually-hidden">Новая цена:</span>
-                    <span>250₽</span>
+                    <span>225₽</span>
                   </b>
                   <button class="slide-card__button-buy button" type="button">Заказать</button>
                 </p>
@@ -142,7 +149,7 @@
                   </del>
                   <b class="slide-card__price slide-card__price--new">
                     <span class="visually-hidden">Новая цена:</span>
-                    <span>275₽</span>
+                    <span>375₽</span>
                   </b>
                   <button class="slide-card__button-buy button" type="button">Заказать</button>
                 </p>
@@ -179,23 +186,23 @@
       <section class="features" data-test="features">
         <div class="features__container container">
           <p class="features__badge badge">Преимущества</p>
-          <h2 class="features__title tittle">Главные причины выбрать Drink2Go</h2>
+          <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__item-title">Скорость</h3>
-              <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
+              <p class="features__item-description">Готовый напиток всегда под рукой — просто открой банку</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Удобство</h3>
-              <p class="features__description">Легко помещается и в карман, и в маленькую сумочку</p>
+              <p class="features__item-description">Легко помещается и в карман, и в маленькую сумочку</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Бодрость</h3>
-              <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+              <p class="features__item-description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
             </li>
             <li class="features__item">
               <h3 class="features__item-title">Экологичность</h3>
-              <p class="features__description">Вся упаковка сделана из перерабатываемых материалов</p>
+              <p class="features__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
             </li>
           </ul>
         </div>
@@ -204,7 +211,7 @@
       <section class="catalog" data-test="catalog">
         <div class="catalog__container container">
           <p class="catalog__badge badge">Каталог</p>
-          <h2 class="catalog__title tittle">Каталог кофейных напитков</h2>
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
           <form class="catalog__filter filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__fieldset">
               <legend class="filter__title">Цена</legend>
@@ -219,15 +226,15 @@
                     </button>
                   </div>
                 </div>
-                <div class="price-filter__price-inputs">
-                  <label class="price-filter__price-label">
+                <div class="price-filter__inputs">
+                  <label class="price-filter__label">
                     <span class="visually-hidden">Минимальная цена</span>
-                    <input class="price-filter__price-input" type="number" name="min-price" placeholder="0" min="0" required>
+                    <input class="price-filter__input" type="number" name="min-price" placeholder="0" min="0" required>
                   </label>
-                  <span class="price-filter__price-delimiter"></span>
-                  <label class="price-filter__price-label">
+                  <span class="price-filter__delimiter"></span>
+                  <label class="price-filter__label">
                     <span class="visually-hidden">Маскимальная цена</span>
-                    <input class="price-filter__price-input" type="number" name="max-price" placeholder="1500" min="0" value="900" required>
+                    <input class="price-filter__input" type="number" name="max-price" placeholder="1500" min="0" value="900" required>
                   </label>
                 </div>
               </div>
@@ -237,7 +244,7 @@
               <ul class="filter__option-list">
                 <li class="filter__option-item">
                   <label class="filter__option-label">
-                    <input class="filter__radio" type="radio" name="milk" value="nevermind">
+                    <input class="filter__radio" type="radio" name="milk" value="nevermind" checked>
                     <span class="filter__option-label-text">Неважно</span>
                   </label>
                 </li>
@@ -266,7 +273,7 @@
               <ul class="filter__option-list">
                 <li class="filter__option-item">
                   <label class="filter__option-label">
-                    <input class="filter__checkbox" type="checkbox" name="Brazil">
+                    <input class="filter__checkbox" type="checkbox" name="Brazil" checked>
                     <span class="filter__option-label-text">Бразилия</span>
                   </label>
                 </li>
@@ -299,14 +306,14 @@
             <button class="filter__button button" type="submit">Применить</button>
             <button class="filter__button button button--secondary" type="reset">Сбросить</button>
           </form>
-          <p class="catalog__sorting">
+          <label class="catalog__sorting">
             <span class="catalog__sorting-text">Сортировка:</span>
             <select class="catalog__sorting-select" name="sort-by-price" aria-label="Сортировка">
-              <option value="default" selected>По умолчанию</option>
-              <option value="low-price">По возрастанию цены</option>
-              <option value="hight-price">По убыванию цены</option>
+              <option class="catalog__sorting-option" value="default" selected>По умолчанию</option>
+              <option class="catalog__sorting-option" value="low-price">По возрастанию цены</option>
+              <option class="catalog__sorting-option" value="hight-price">По убыванию цены</option>
             </select>
-          </p>
+          </label>
           <ul class="catalog__list">
             <li class="catalog__product-card product-card">
               <a class="product-card__image-link" href="#">
@@ -418,27 +425,27 @@
             </li>
           </ul>
           <div class="catalog__pagination">
-            <button class="catalog__pagination-button catalog__pagination-button--pre" type="button">
+            <button class="catalog__pagination-button catalog__pagination-button--pre button button--secondary" type="button">
               <span class="visually-hidden">Предыдущая страница</span>
             </button>
             <ol class="catalog__pagination-list">
               <li class="catalog__pagination-item">
-                <button class="catalog__pagination-button button" type="button">
+                <button class="catalog__pagination-button button button--secondary" type="button">
                   <span class="catalog__pagination-button-text">1</span>
                 </button>
               </li>
               <li class="catalog__pagination-item">
-                <button class="catalog__pagination-button button" type="button">
+                <button class="catalog__pagination-button button button--secondary" type="button">
                   <span class="catalog__pagination-button-text">2</span>
                 </button>
               </li>
               <li class="catalog__pagination-item">
-                <button class="catalog__pagination-button button" type="button">
+                <button class="catalog__pagination-button button button--secondary" type="button">
                   <span class="catalog__pagination-button-text">3</span>
                 </button>
               </li>
             </ol>
-            <button class="catalog__pagination-button catalog__pagination-button--next" type="button">
+            <button class="catalog__pagination-button catalog__pagination-button--next button button--secondary" type="button">
               <span class="visually-hidden">Следующая страница</span>
             </button>
           </div>
@@ -526,10 +533,10 @@
             <h2 class="info-section__title">Контакты</h2>
             <div class="info-section__list">
               <address class="info-section__item">
-                <span class="info-section__link">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+                <span class="info-section__contact">Санкт-Петербург, набережная реки Карповки, дом 5</span>
               </address>
               <span class="info-section__item">
-                <a class="info-section__link" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                <a class="info-section__contact" href="tel:+79999999999">+7 (999) 999-99-99</a>
               </span>
             </div>
           </li>

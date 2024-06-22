@@ -1,0 +1,51 @@
+.slide-card a {
+  color: $base-black;
+  text-decoration: none;
+}
+
+.slide-card__badge {
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.slide-card__title {
+  font-size: 36px;
+  font-weight: $bold;
+  line-height: 48px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.slide-card__description {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.slide-card__price {
+  line-height: 32px;
+
+  &--old {
+    font-size: 16px;
+  }
+
+  &--new {
+    font-size: 20px;
+  }
+}

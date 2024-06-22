@@ -1,0 +1,20 @@
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__logo-text {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+}

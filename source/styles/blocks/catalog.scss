@@ -1,0 +1,29 @@
+.catalog__title {
+  font-size: 24px;
+  font-weight: $bold;
+  line-height: 36px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.catalog__sorting {
+  font-size: 16px;
+  font-weight: $semibold;
+  line-height: 24px;
+}
+
+.catalog__sorting-select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: $base-primory;
+  text-transform: lowercase;
+
+  appearance: none;
+  border: 0;
+}

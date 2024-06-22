@@ -1,0 +1,30 @@
+.header__logo-text {
+  display: none;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 130px;
+  }
+}
+
+.header__nav-link {
+  font-size: 12px;
+  font-weight: $medium;
+  line-height: 16px;
+  color: $base-black;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__nav-link-text {
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+}
