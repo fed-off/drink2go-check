@@ -43,6 +43,18 @@
 
 .header__logo-image {
   display: block;
+  width: 32px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    height: 36px;
+  }
 }
 
 .header__logo-text {
