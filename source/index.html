@@ -24,7 +24,7 @@
         <nav class="header__nav">
           <ul class="header__nav-list header__nav-list--menu header__nav-list--menu-closed">
             <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--current" href="#">Главная</a>
+              <span class="header__nav-link header__nav-link--current">Главная</span>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="#">
@@ -53,7 +53,7 @@
                 <span class="header__nav-link-text header__nav-link-text--desktop">Корзина</span>
               </a>
             </li>
-            <li class="header__nav-item">
+            <li class="header__nav-item header__nav-item--burger">
               <button class="header__nav-link header__nav-link--burger js-toggle-button" type="button">
                 <span class="header__nav-link-text visually-hidden">Открыть меню</span>
               </button>
@@ -306,14 +306,14 @@
             <button class="filter__button button" type="submit">Применить</button>
             <button class="filter__button button button--secondary" type="reset">Сбросить</button>
           </form>
-          <label class="catalog__sorting">
+          <p class="catalog__sorting">
             <span class="catalog__sorting-text">Сортировка:</span>
             <select class="catalog__sorting-select" name="sort-by-price" aria-label="Сортировка">
               <option class="catalog__sorting-option" value="default" selected>По умолчанию</option>
               <option class="catalog__sorting-option" value="low-price">По возрастанию цены</option>
               <option class="catalog__sorting-option" value="hight-price">По убыванию цены</option>
             </select>
-          </label>
+          </p>
           <ul class="catalog__list">
             <li class="catalog__product-card product-card">
               <a class="product-card__image-link" href="#">
