@@ -1,3 +1,19 @@
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  flex-shrink: 0;
+  margin-right: 20px;
+  padding: 12px 0;
+}
+
+.header__logo-image {
+  display: block;
+}
+
 .header__logo-text {
   display: none;
   font-size: 12px;
@@ -10,6 +26,7 @@
 }
 
 .header__nav-link {
+  display: block;
   font-size: 12px;
   font-weight: $medium;
   line-height: 16px;
@@ -17,6 +34,89 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.header__nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--menu-open {
+    display: flex;
+  }
+
+  &--menu-closed {
+    display: none;
+  }
+}
+
+.header__nav-list--menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  background-color: $base-white;
+  border-top: 1px solid $base-secondary;
+
+
+  .header__nav-item::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $base-secondary;
+  }
+
+  .header__nav-link {
+    padding: 20px;
+  }
+}
+
+.header__nav-list--ui {
+  flex-wrap: wrap;
+  margin-right: -20px;
+
+  .header__nav-link {
+    padding: 22px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    }
+
+    &--user::before {
+      mask-image: url("../../icons/stack.svg#user");
+      background-color: $base-black;
+    }
+
+    &--basket::before {
+      mask-image: url("../../icons/stack.svg#basket");
+      background-color: $base-black;
+    }
+
+    &--burger {
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+
+    &--burger::before {
+      mask-image: url("../../icons/stack.svg#burger");
+      background-color: $base-black;
+    }
+
+    &--burger-open::before {
+      mask-image: url("../../icons/stack.svg#close");
+      background-color: $base-black;
+    }
+  }
 }
 
 .header__nav-link-text {
