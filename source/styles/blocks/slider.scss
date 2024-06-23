@@ -122,7 +122,7 @@
   }
 
   &:focus-visible:not(.slider__pagination-button--current),
-  &:hover:not(.slider__pagination-button--current), {
+  &:hover:not(.slider__pagination-button--current) {
     background: linear-gradient(transparent 10px, $primory-opacity 10px, $primory-opacity 14px, transparent 14px);
   }
 }
