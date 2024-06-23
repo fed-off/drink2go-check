@@ -22,10 +22,6 @@
     background-color: $bg-espresso;
   }
 
-  // &:not(.slide-card--visible) { // прячет карточки слайдера
-  //   display: none;
-  // }
-
   @media (min-width: $tablet-width) {
     padding: 60px 85px 0;
 
@@ -115,7 +111,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  font-size: 36px;
+  font-size: 37px; // по макету 36px, но так попадает в Pixel Perfect
   font-weight: $bold;
   line-height: 48px;
   text-align: center;

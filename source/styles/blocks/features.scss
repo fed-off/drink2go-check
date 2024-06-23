@@ -1,22 +1,118 @@
+.features__container {
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 30px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
+}
+
+.features__badge {
+  margin-bottom: 4px;
+}
+
 .features__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-size: 24px;
   font-weight: $bold;
   line-height: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
     font-size: 42px;
     line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.features__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 50px 30px;
+  }
+}
+
+.features__item {
+  &::before {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--fast {
+    &::before {
+      background-image: url("../../icons/stack.svg#time");
+    }
+  }
+
+  &--comfortable {
+    &::before {
+      background-image: url("../../icons/stack.svg#shield");
+    }
+  }
+
+  &--cheerful {
+    &::before {
+      background-image: url("../../icons/stack.svg#lightning");
+    }
+  }
+
+  &--eco {
+    &::before {
+      background-image: url("../../icons/stack.svg#leaf");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 20px;
+
+    &::before {
+      grid-column: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    &::before {
+      margin-bottom: 20px;
+    }
   }
 }
 
 .features__item-title {
+  margin: 0;
+  margin-bottom: 4px;
   font-size: 18px;
   font-weight: $bold;
   line-height: 32px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: 36px;
     text-align: start;
@@ -28,6 +124,7 @@
 }
 
 .features__item-description {
+  margin: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
