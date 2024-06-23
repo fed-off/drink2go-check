@@ -1,0 +1,128 @@
+.slider {
+  position: relative;
+}
+
+.slider__list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__slide-card {
+  flex-shrink: 0;
+
+  &:not(.slider__slide-card--visible) { // прячет карточки слайдера
+    display: none;
+  }
+}
+
+.slider__button {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: $base-primory;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../../icons/stack.svg#arrow-left");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &:disabled {
+    cursor: default;
+
+    &::before {
+      background-color: $base-grey;
+    }
+  }
+
+  &:active:not(:disabled) {
+    background: linear-gradient(90deg, $primory-opacity, transparent);
+  }
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    &:active:not(:disabled) {
+      background: linear-gradient(270deg, $primory-opacity, transparent);
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 640px;
+
+    &:focus-visible:not(:disabled):not(:active),
+    &:hover:not(:disabled):not(:active) {
+      background-color: $base-white;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+}
+
+.slider__pagination {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+.slider__pagination-item {
+  height: 24px;
+}
+
+.slider__pagination-button {
+  width: 62px;
+  height: 24px;
+  border: 0;
+  background: linear-gradient(transparent 10px, $base-white 10px, $base-white 14px, transparent 14px);
+  cursor: pointer;
+
+  &--current {
+    cursor: default;
+    background: linear-gradient(transparent 10px, $base-primory 10px, $base-primory 14px, transparent 14px);
+  }
+
+  &:focus-visible:not(.slider__pagination-button--current),
+  &:hover:not(.slider__pagination-button--current), {
+    background: linear-gradient(transparent 10px, $primory-opacity 10px, $primory-opacity 14px, transparent 14px);
+  }
+}

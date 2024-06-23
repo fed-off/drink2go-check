@@ -10,6 +10,24 @@
   border-radius: 4px;
   cursor: pointer;
 
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    color: $base-white;
+    background-color: $primory-lighter;
+  }
+
+  &:active:not(:disabled) {
+    color: $base-white;
+    background-color: $primory-darker;
+  }
+
+  &:disabled {
+    cursor: default;
+    color: $base-white;
+    background-color: $base-grey;
+  }
+
   &--secondary {
     color: $base-primory;
     background-color: $base-white;

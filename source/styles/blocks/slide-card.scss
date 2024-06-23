@@ -3,20 +3,127 @@
   text-decoration: none;
 }
 
+.slide-card {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 60px;
+
+  &--white {
+    background-color: $bg-flat-white;
+  }
+
+  &--lavender {
+    background-color: $bg-lavender-latte;
+  }
+
+  &--espresso {
+    background-color: $bg-espresso;
+  }
+
+  // &:not(.slide-card--visible) { // прячет карточки слайдера
+  //   display: none;
+  // }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 85px 0;
+
+    &--white {
+      background: linear-gradient($bg-flat-white 640px, $base-white 640px);
+    }
+
+    &--lavender {
+      background: linear-gradient($bg-lavender-latte 640px, $base-white 640px);
+    }
+
+    &--espresso {
+      background: linear-gradient($bg-espresso 640px, $base-white 640px);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 600px 1fr;
+    gap: 30px;
+    padding: 30px 105px 84px;
+
+    &--white {
+      background: initial;
+      background-color: $bg-flat-white;
+    }
+
+    &--lavender {
+      background: initial;
+      background-color: $bg-lavender-latte;
+    }
+
+    &--espresso {
+      background: initial;
+      background-color: $bg-espresso;
+    }
+  }
+}
+
+.slide-card__image {
+  display: block;
+  width: 280px;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.slide-card__image-wrapper {
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: initial;
+  }
+}
+
+.slide-card__text-content {
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    height: 100%;
+    padding-top: 150px;
+  }
+}
+
 .slide-card__badge {
+  margin-bottom: 4px;
+
+
   @media (min-width: $desktop-width) {
     text-align: start;
   }
 }
 
 .slide-card__title {
+  margin: 0;
+  margin-bottom: 10px;
+
   font-size: 36px;
   font-weight: $bold;
   line-height: 48px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
+    margin-bottom: 16px;
+
+    font-size: 58px; // по макету 56px, но так попадает в Pixel Perfect
     line-height: 80px;
   }
 
@@ -26,26 +133,59 @@
 }
 
 .slide-card__description {
+  margin: 0;
+  margin-bottom: 20px;
   text-align: center;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+
     font-size: 20px;
     line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+
     text-align: start;
+  }
+}
+
+.slide-card__purchase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    justify-content: start;
   }
 }
 
 .slide-card__price {
   line-height: 32px;
-
-  &--old {
-    font-size: 16px;
-  }
-
-  &--new {
-    font-size: 20px;
-  }
 }
+
+.slide-card__price-old {
+  margin-right: 4px;
+  font-size: 16px;
+  color: $base-primory;
+}
+
+.slide-card__price-new {
+  font-size: 20px;
+}
+
