@@ -13,7 +13,7 @@
 .slider__slide-card {
   flex-shrink: 0;
 
-  &:not(.slider__slide-card--visible) { // прячет карточки слайдера
+  &:not(.slider__slide-card--current) { // прячет карточки слайдера
     display: none;
   }
 }
@@ -77,8 +77,8 @@
     width: 80px;
     height: 640px;
 
-    &:focus-visible:not(:disabled):not(:active),
-    &:hover:not(:disabled):not(:active) {
+    &:focus-visible:not(:disabled),
+    &:hover:not(:disabled) {
       background-color: $base-white;
     }
   }
