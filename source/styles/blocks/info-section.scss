@@ -1,4 +1,16 @@
+.info-section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .info-section__title {
+  margin: 0;
+  margin-bottom: 12px;
+
   font-size: 14px;
   font-weight: $bold;
   line-height: 20px;
@@ -6,13 +18,66 @@
 }
 
 .info-section__link {
+  display: block;
+  padding: 8px 0;
+
   font-size: 12px;
   font-weight: $medium;
   line-height: 16px;
+  text-transform: uppercase;
 }
 
-.info-section__contact {
-  font-size: 14px;
-  font-style: normal;
-  line-height: 20px;
+a.info-section__link {
+  &:focus-visible,
+  &:hover {
+    color: $primory-lighter;
+  }
+
+  &:active {
+    color: $primory-darker;
+  }
+}
+
+// - - -
+.info-section--contacts {
+  .info-section__title {
+    margin-bottom: 20px;
+  }
+
+  .info-section__list {
+    gap: 16px;
+  }
+
+  .info-section__item {
+    display: flex;
+    gap: 6px;
+  }
+
+  .info-section__item::before {
+    content: "";
+    width: 13px;
+    height: 16px;
+    margin-top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  .info-section__item--address::before {
+    background-image: url("../../icons/stack.svg#location-point");
+  }
+
+  .info-section__item--phone::before {
+    background-image: url("../../icons/stack.svg#phone");
+  }
+
+  .info-section__link {
+    padding: 0;
+    font-size: 14px;
+    font-weight: $regular;
+    font-style: normal;
+    line-height: 20px;
+    text-transform: none;
+  }
 }
