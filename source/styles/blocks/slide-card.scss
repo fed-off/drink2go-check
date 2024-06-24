@@ -1,6 +1,16 @@
 .slide-card a {
+  display: block;
   color: $base-black;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    color: $primory-lighter;
+  }
+
+  &:active {
+    color: $base-primory;
+  }
 }
 
 .slide-card {
