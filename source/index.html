@@ -14,6 +14,8 @@
     <link rel="preload" href="./fonts/montserrat-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/nouislider.css">
+    <link rel="stylesheet" href="vendor/custom-slider.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
@@ -245,24 +247,19 @@
                 <fieldset class="filter__fieldset">
                   <legend class="filter__title">Цена</legend>
                   <div class="filter__price-filter price-filter">
-                    <div class="price-filter__range-bar">
-                      <div class="price-filter__range">
-                        <button class="price-filter__range-toggle price-filter__range-toggle--min" type="button">
-                          <span class="visually-hidden">Изменить минимальную цену</span>
-                        </button>
-                        <button class="price-filter__range-toggle price-filter__range-toggle--max" type="button">
-                          <span class="visually-hidden">Изменить максимальную цену</span>
-                        </button>
+                    <div class="price-filter__slider-wrapper">
+                      <div>
+                        <div class="test-slider" id="slider"></div>
                       </div>
                     </div>
                     <div class="price-filter__inputs">
                       <label class="price-filter__label">
                         <span class="visually-hidden">Минимальная цена</span>
-                        <input class="price-filter__input" type="number" name="min-price" placeholder="0" min="0">
+                        <input class="price-filter__input price-filter__input--min" type="number" name="min-price" placeholder="0" min="0">
                       </label>
                       <label class="price-filter__label">
                         <span class="visually-hidden">Маскимальная цена</span>
-                        <input class="price-filter__input" type="number" name="max-price" placeholder="1500" min="0" value="900">
+                        <input class="price-filter__input price-filter__input--max" type="number" name="max-price" placeholder="1500" min="0" value="900">
                       </label>
                     </div>
                   </div>
@@ -612,6 +609,7 @@
         </p>
       </div>
     </footer>
+    <script src="vendor/nouislider.js"></script>
     <script src="scripts/index.js" type="module"></script>
   </body>
 </html>

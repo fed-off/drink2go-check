@@ -1,0 +1,61 @@
+#slider  {
+  padding-left: 7px;
+  padding-right: 16px;
+}
+
+.noUi-target {
+  background: none;
+  border: none;
+}
+
+.noUi-connect {
+  background: #9070ec;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border: 2px solid #9070ec;
+  border-radius: 50%;
+  cursor: pointer;
+
+  top: -11px;
+}
+
+.noUi-horizontal .noUi-handle::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  background: #9070ec;
+  border-radius: 50%;
+}
+
+.noUi-horizontal .noUi-handle:not(:disabled):focus-visible .noUi-horizontal .noUi-handle::before,
+.noUi-horizontal .noUi-handle:not(:disabled):hover .noUi-horizontal .noUi-handle::before{
+  display: block;
+}
+
+.noUi-horizontal .noUi-handle:active:not(:disabled) {
+  border-color: #9070ec;
+}
+
+.noUi-horizontal .noUi-handle:after,
+.noUi-horizontal .noUi-handle:before {
+  display: none;
+}
+
+.noUi-horizontal .noUi-connect {
+  height: 4px;
+  top: 0;
+}
+
+.noUi-horizontal {
+  height: 4px;
+  background: linear-gradient(transparent 1px, #e2e2e2 1px, #e2e2e2 3px, transparent 3px);
+}
