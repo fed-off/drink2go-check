@@ -186,6 +186,7 @@
 }
 
 .slide-card__price-old {
+  display: inline-block;
   margin-right: 4px;
   font-size: 16px;
   color: $base-primory;
@@ -194,4 +195,3 @@
 .slide-card__price-new {
   font-size: 20px;
 }
-
