@@ -191,6 +191,7 @@ a.header__nav-link {
     &::before {
       content: "";
       display: block;
+      flex-shrink: 0;
       width: 16px;
       height: 16px;
       mask-size: contain;
@@ -234,6 +235,7 @@ a.header__nav-link {
 
     @media (min-width: $desktop-width) {
       display: flex;
+      align-items: center;
       gap: 8px;
 
       &:focus-visible::before,
