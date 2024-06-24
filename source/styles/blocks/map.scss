@@ -1,0 +1,26 @@
+.map__image-wrapper {
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.map__image {
+  display: block;
+  width: 320px;
+  height: 420px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 480px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 540px;
+  }
+}
