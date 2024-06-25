@@ -1,4 +1,4 @@
-#slider  {
+#slider {
   padding-left: 7px;
   padding-right: 16px;
 }
@@ -6,6 +6,7 @@
 .noUi-target {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .noUi-connect {
@@ -23,31 +24,17 @@
   top: -11px;
 }
 
+.noUi-horizontal .noUi-handle::after,
 .noUi-horizontal .noUi-handle::before {
-  content: "";
   display: none;
-  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+
   width: 16px;
   height: 16px;
-  transform: translate(-50%, -50%);
-  background: #9070ec;
   border-radius: 50%;
-}
-
-.noUi-horizontal .noUi-handle:not(:disabled):focus-visible .noUi-horizontal .noUi-handle::before,
-.noUi-horizontal .noUi-handle:not(:disabled):hover .noUi-horizontal .noUi-handle::before{
-  display: block;
-}
-
-.noUi-horizontal .noUi-handle:active:not(:disabled) {
-  border-color: #9070ec;
-}
-
-.noUi-horizontal .noUi-handle:after,
-.noUi-horizontal .noUi-handle:before {
-  display: none;
+  background-color: rgba(120, 89, 207, 0.25);
 }
 
 .noUi-horizontal .noUi-connect {
@@ -58,4 +45,29 @@
 .noUi-horizontal {
   height: 4px;
   background: linear-gradient(transparent 1px, #e2e2e2 1px, #e2e2e2 3px, transparent 3px);
+}
+
+/* Hover */
+.noUi-handle:hover::before,
+.noUi-handle:focus-visible::before {
+  display: block;
+}
+
+/* Active state */
+#slider .noUi-active::before {
+  display: block;
+  background-color: #7859CF;
+}
+
+#slider .noUi-active {
+  border-color: #7859CF;
+}
+
+/* Disabled state */
+.noUi-disabled .noUi-handle {
+  border-color: #BDBDBD;
+}
+
+.noUi-disabled .noUi-horizontal .noUi-connect {
+  color: #BDBDBD;
 }
