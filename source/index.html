@@ -176,9 +176,6 @@
             <button class="slider__button slider__button--prev slider-button-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
-            <button class="slider__button slider__button--next slider-button-next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
             <ul class="slider__pagination slider-pagination">
               <li class="slider__pagination-item">
                 <button class="slider__pagination-button slider__pagination-button--current" type="button">
@@ -196,6 +193,9 @@
                 </button>
               </li>
             </ul>
+            <button class="slider__button slider__button--next slider-button-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
           </div>
         </div>
       </section>
@@ -249,7 +249,9 @@
                   <div class="filter__price-filter price-filter">
                     <div class="price-filter__slider-wrapper">
                       <div>
-                        <div class="test-slider" id="slider"></div>
+                        <div class="test-slider" id="slider" aria-role="input">
+                          <span class="visually-hidden">Бегунок выбора диапазона цены</span>
+                        </div>
                       </div>
                     </div>
                     <div class="price-filter__inputs">
